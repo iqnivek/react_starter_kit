@@ -37,6 +37,6 @@ npm run lint    # Run linter
 ├── dist
     └── bundle.js            # Compiled JS bundle
 ├── src                      # Application source code
-│   ├── main.jsx             # JS entry point for bundle
+│   ├── index.jsx            # JS entry point for bundle
 └── test                     # Tests
 ```

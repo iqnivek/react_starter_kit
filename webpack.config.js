@@ -1,12 +1,15 @@
+// TODO see https://github.com/bensmithett/webpack-css-example/blob/master/webpack.config.js
+
 module.exports = {
   context: __dirname,
-  entry: './src/main.jsx',
+  entry: './src/index.jsx',
   output: {
+    filename: 'bundle.js',
     path: './dist',
-    filename: 'bundle.js'
+    publicPath: '/dist'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx', '.scss'],
     modulesDirectories: ['node_modules']
   },
   module: {
@@ -19,6 +22,13 @@ module.exports = {
           presets: ['es2015', 'react'],
           cacheDirectory: true
         }
+      },
+
+      // SCSS
+      {
+        test: /\.scss$/,
+        include: /src/,
+        loaders: ['styles', 'css', 'sass']
       }
     ]
   }
