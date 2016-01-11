@@ -21,3 +21,15 @@ npm run watch
 ```
 
 Then open `dist/index.html`.
+
+### Directory structure
+
+```
+.
+├── webpack.config.js        # Webpack configuration
+├── dist
+    └── app.js               # Compiled JS bundle
+├── src                      # Application source code
+│   ├── app.jsx              # JS entry point for bundle
+└── test                     # Tests
+```
