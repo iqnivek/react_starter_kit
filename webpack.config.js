@@ -1,11 +1,9 @@
 module.exports = {
   context: __dirname,
-  entry: {
-    app: './src/app'
-  },
+  entry: './src/main.jsx',
   output: {
     path: './dist',
-    filename: '[name].js'
+    filename: 'bundle.js'
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],

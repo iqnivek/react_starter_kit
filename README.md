@@ -35,8 +35,8 @@ npm run lint    # Run linter
 .
 ├── webpack.config.js        # Webpack configuration
 ├── dist
-    └── app.js               # Compiled JS bundle
+    └── bundle.js            # Compiled JS bundle
 ├── src                      # Application source code
-│   ├── app.jsx              # JS entry point for bundle
+│   ├── main.jsx             # JS entry point for bundle
 └── test                     # Tests
 ```
