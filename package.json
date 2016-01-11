@@ -3,7 +3,7 @@
   "description": "YOUR_DESCRIPTION",
   "private": true,
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist/*.js",
     "watch": "./node_modules/.bin/webpack --watch",
     "lint": "eslint . ./"
   },
