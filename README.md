@@ -22,7 +22,14 @@ npm run watch
 
 Then open `dist/index.html`.
 
-### Directory structure
+## Other tasks
+
+```
+npm test        # Run tests
+npm run lint    # Run linter
+```
+
+## Directory structure
 
 ```
 .
