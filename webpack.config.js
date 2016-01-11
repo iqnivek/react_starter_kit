@@ -1,4 +1,4 @@
-// TODO see https://github.com/bensmithett/webpack-css-example/blob/master/webpack.config.js
+// TODO add ExtractTextPlugin, see https://github.com/bensmithett/webpack-css-example/blob/master/webpack.config.js
 
 module.exports = {
   context: __dirname,
@@ -27,8 +27,11 @@ module.exports = {
       // SCSS
       {
         test: /\.scss$/,
-        include: /src/,
-        loaders: ['styles', 'css', 'sass']
+        loaders: [
+          'style-loader',
+          'css-loader',
+          'sass-loader?includePaths[]=./src'
+        ]
       }
     ]
   }
