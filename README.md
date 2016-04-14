@@ -16,17 +16,24 @@ Fill out project name and description in `package.json`.
 
 ```
 cd PATH_TO_PROJECT/YOUR_PROJECT_NAME
-npm install
-npm run watch
+npm start
 ```
 
 Then open `dist/index.html`.
 
-## Other tasks
+## Testing and linting
 
 ```
-npm test        # Run tests
-npm run lint    # Run linter
+npm test
+npm run lint
+```
+
+## Adding dependencies
+
+```
+npm install --save <package>
+npm install --save-dev <package>
+npm run shrinkwrap
 ```
 
 ## Directory structure
