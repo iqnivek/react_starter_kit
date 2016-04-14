@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf dist/*.js",
-    "watch": "./node_modules/.bin/webpack --watch",
-    "lint": "eslint . ./"
+    "lint": "eslint . ./",
+    "prestart": "npm install",
+    "shrinkwrap": "rm -f npm-shrinkwrap.json && npm install && npm-shrinkwrap --dev",
+    "start": "webpack --watch"
   },
   "dependencies": {
     "moment": "~2.10.6",
@@ -25,6 +27,7 @@
     "eslint-friendly-formatter": "^1.2.2",
     "eslint-plugin-react": "^3.11.3",
     "node-sass": "^3.4.2",
+    "npm-shrinkwrap": "^5.4.1",
     "react-addons-test-utils": "^0.14.6",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
