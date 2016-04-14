@@ -10,11 +10,11 @@
     "start": "webpack --watch"
   },
   "dependencies": {
-    "moment": "~2.10.6",
-    "pluralize": "1.2.x",
-    "react": "0.14.x",
-    "react-dom": "^0.14.6",
-    "underscore": "~1.8.3"
+    "moment": "^2.12.0",
+    "pluralize": "^1.2.0",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "babel-core": "^6.3.15",
@@ -27,8 +27,8 @@
     "eslint-friendly-formatter": "^1.2.2",
     "eslint-plugin-react": "^3.11.3",
     "node-sass": "^3.4.2",
-    "npm-shrinkwrap": "^5.4.1",
-    "react-addons-test-utils": "^0.14.6",
+    "npm-shrinkwrap": "^200.0.0",
+    "react-addons-test-utils": "^15.0.0",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.9"
